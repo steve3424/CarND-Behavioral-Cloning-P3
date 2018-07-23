@@ -67,5 +67,8 @@ I settled on this model and decided then to see what data I needed to train on i
 
 I then decided to add a lap of center lane driving in the reverse direction. This improved the model, but it still had trouble with the final right turn of the track so I added a second lap in the reverse direction. These 2 laps helped with the left turn bias and allowed it to successfully complete a full lap of the track.
 
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
+Using only 4 laps of center lane driving, 2 in each direction, did not result in the cleanest lap around the track, but for the purposes of this project it was successful.
 
+#### 2. Possible Improvements
+
+The primary area I would like experiment with is the training data. I would like to try out a more robust collection of training data (extra turning data, recovery data, different tracks) to see if the lap could be cleaner and to see if the model could generalize to other tracks.
