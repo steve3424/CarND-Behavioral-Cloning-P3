@@ -1,0 +1,5 @@
+-use generator
+-use mouse to get steering angles (better data??)
+-add more regularization
+-add more diverse data
+-train on different tracks
