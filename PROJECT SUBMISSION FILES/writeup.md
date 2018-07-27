@@ -46,9 +46,9 @@ I collected a variety of training data including multiple laps of center lane dr
 
 My simulation ended up driving successfully by using 5 forward laps, 3 backward laps, and extra turning data.
 
-![Alt text](data_images\center_2018_07_23_21_16_44_095.jpg?raw=True)
-![Alt text](data_images\left_2018_07_23_21_16_44_095.jpg?raw=True)
-![Alt text](data_images\right_2018_07_23_21_16_44_095.jpg?raw=True)
+![Alt text](data_images/center_2018_07_23_21_16_44_095.jpg?raw=True)
+![Alt text](data_images/left_2018_07_23_21_16_44_095.jpg?raw=True)
+![Alt text](data_images/right_2018_07_23_21_16_44_095.jpg?raw=True)
 
 
 ## Model Architecture and Training Strategy
