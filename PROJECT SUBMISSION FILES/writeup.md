@@ -30,7 +30,7 @@ The starting point for my model was NVIDIA's PilotNet as suggested in the classr
 
 Below is a visualization of the network architecture
 
-![Alt text](data_images/network.jpg?raw=True "Network")
+![Alt text](data_images/network.png?raw=True "Network")
 
 #### 2. Attempts to reduce overfitting in the model
 
