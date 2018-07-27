@@ -28,6 +28,10 @@ The starting point for my model was NVIDIA's PilotNet as suggested in the classr
 -loss function = mean squared error
 -optimizer = adam optimizer
 
+Below is a visualization of the network architecture
+
+![Alt text](data_images/network.jpg?raw=True "Network")
+
 #### 2. Attempts to reduce overfitting in the model
 
 I used dropout with a keep probability of 0.5 after each convolution. I experimented with l2 regularization on the fully connected layers, but found this did not improve my results.
@@ -46,9 +50,11 @@ I collected a variety of training data including multiple laps of center lane dr
 
 My simulation ended up driving successfully by using 5 forward laps, 3 backward laps, and extra turning data.
 
-![Alt text](data_images/center_2018_07_23_21_16_44_095.jpg?raw=True)
-![Alt text](data_images/left_2018_07_23_21_16_44_095.jpg?raw=True)
-![Alt text](data_images/right_2018_07_23_21_16_44_095.jpg?raw=True)
+![Alt text](data_images/center_2018_07_23_21_16_44_095.jpg?raw=True "Center")
+![Alt text](data_images/left_2018_07_23_21_16_44_095.jpg?raw=True "Left")
+![Alt text](data_images/right_2018_07_23_21_16_44_095.jpg?raw=True "Right")
+
+Above are an example of the center, left, and right images I used for training. I added the left and right images with a +0.2 and -0.2 steering correction respectively
 
 
 ## Model Architecture and Training Strategy
@@ -68,6 +74,7 @@ I recorded 5 laps in either direction on the first track as well as extra data f
 I found that with multiple forward and backward laps with slightly more forward lap data compared to backward lap data was a successful strategy.
 
 Using the model as it was, there was a problem with overfitting. My validation loss would quickly hit its minimum value and then begin to increase over the course of training. Adding dropout after the first fully connected layer and keeping my epochs to no more than 5 solved this problem. More regularization could have potentially improved the model, but it wasn't necessary to complete a lap.
+
 
 
 #### 2. Possible Improvements
